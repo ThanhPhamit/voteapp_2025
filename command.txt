@@ -1,0 +1,11 @@
+ssh-keygen -t rsa -b 4096 -C "robertthanh1107@gmail.com"
+./keypair/voteapp_2025_keypair
+
+#Reference: Terraform Excercise No4 from CloudAcademy:
+https://github.com/cloudacademy/terraform-aws
+
+#Commands Terraform:
+terraform init
+terraform plan --var-file "terraform.tfvars"
+terraform apply --var-file "terraform.tfvars"
+terraform destroy --var-file "terraform.tfvars"

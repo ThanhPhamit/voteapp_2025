@@ -1,0 +1,56 @@
+variable "instance_type" {
+  type = string
+}
+variable "ami" {
+  type = string
+}
+variable "key_name" {
+  type = string
+}
+
+variable "vpc_id" {
+  type = string
+}
+
+variable "public_subnets" {
+  type = list(any)
+}
+
+variable "private_subnets" {
+  type = list(any)
+}
+
+variable "webserver_sg_id" {
+  type = string
+}
+
+variable "alb_sg_id" {
+  type = string
+}
+
+variable "mongodb_ip" {
+  type = string
+}
+
+variable "asg_desired" {
+  type    = number
+  default = 2
+}
+variable "asg_max_size" {
+  type    = number
+  default = 2
+}
+variable "asg_min_size" {
+  type    = number
+  default = 2
+}
+
+variable "domain" {
+  type = string
+}
+
+variable "tags" {
+  type        = map(string)
+  description = "Tags to apply to resources"
+  default     = {}
+}

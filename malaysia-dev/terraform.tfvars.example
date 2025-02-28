@@ -1,0 +1,15 @@
+# Region: ap-southeast-5
+region                = "ap-southeast-5"
+profile               = "dev01-mfa"
+domain                = "voteapp2025.thanhpham.click"
+app_dns_zone          = "thanhpham.click"
+availability_zones    = ["ap-southeast-5a", "ap-southeast-5b"]
+workstation_ip        = "115.78.131.125/32"
+cidr_block            = "10.10.0.0/16"
+bastion_instance_type = "t3.micro"
+bastion_ami           = "ami-06a9c319793848f88" #Ubuntu 24.04
+app_instance_type     = "t3.micro"
+app_ami               = "ami-06a9c319793848f88" #Ubuntu 24.04
+db_instance_type      = "t3.micro"
+db_ami                = "ami-06a9c319793848f88" #Ubuntu 24.04
+keypair_path          = "./keypair/voteapp_2025_keypair.pub"
